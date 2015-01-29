@@ -48,5 +48,8 @@ if ($response->content eq "0") {
 	exit 0;
 } else {
 	print "failed\n";
+	print "-----------------\n";
+	print $response->content;
+	print "\n------------------\n";
 	exit 1;
 }
